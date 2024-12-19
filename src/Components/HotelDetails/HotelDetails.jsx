@@ -7,6 +7,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import CustomImageList from '../ImageListMUI';
+import './HotelDetails.css'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -71,19 +72,19 @@ export default function FullWidthTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0} dir={theme.direction}>
-        <div className='hotel-1'>
+        <div className='hotel-1 hotel-tab'>
           <div><CustomImageList /></div>
           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore alias vitae fuga! Nulla, dignissimos inventore? Officia in suscipit minima, optio quos excepturi rerum enim eius illo, consequuntur animi sequi!</div>
         </div>
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
-      <div className='hotel-2'>
+      <div className='hotel-2 hotel-tab'>
       <div><CustomImageList /></div>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore alias vitae fuga! Nulla, dignissimos inventore? Officia in suscipit minima, optio quos excepturi rerum enim eius illo, consequuntur animi sequi!</div>
       </div>
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
-      <div className='hotel-3'>
+      <div className='hotel-3 hotel-tab'>
       <div><CustomImageList /></div>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore alias vitae fuga! Nulla, dignissimos inventore? Officia in suscipit minima, optio quos excepturi rerum enim eius illo, consequuntur animi sequi!</div>
       </div>
