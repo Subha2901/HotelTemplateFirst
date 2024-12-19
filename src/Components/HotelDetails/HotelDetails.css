@@ -1,0 +1,11 @@
+.hotel-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.css-1izfg5m{
+  width: 0;
+}
