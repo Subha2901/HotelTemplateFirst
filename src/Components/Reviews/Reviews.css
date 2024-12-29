@@ -139,8 +139,17 @@ Variables
   Reviews
   ===============
   */
+
+  .review-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+
   main {
-    min-height: 100vh;
     display: grid;
     place-items: center;
   }
@@ -160,9 +169,14 @@ Variables
     max-width: var(--fixed-width);
   } */
   .review {
-    padding: 1.5rem 2rem;
+    margin: 1.5rem 2rem;
     transition: var(--transition);
     text-align: center;
+    padding: 5% 0%;
+    background-color: white;
+    flex: auto;
+    width: 50%;
+    border-radius: 1%;
   }
   .review:hover {
     box-shadow: var(--dark-shadow);
@@ -260,7 +274,6 @@ Variables
     justify-content: center;
     border-radius: 18px;
     background-color: whitesmoke;
-    border: #222 solid 0.5px;
   }
   
   .button-container{

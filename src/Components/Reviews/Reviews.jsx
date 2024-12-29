@@ -1,18 +1,20 @@
-import React from 'react'
-import people from "../../assets/data"
+import React from "react";
+import people from "../../assets/data";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards, Autoplay, Navigation } from "swiper/modules";
-import './Reviews.css'
-
+import "./Reviews.css";
+import Newsletter from "../Newsletter/Newsletter";
 
 export default function Reviews() {
-    const swiperRef = React.useRef(null); // Swiper reference
+  const swiperRef = React.useRef(null); // Swiper reference
 
-    return (
-      <article className="review">
+  return (
+    <div className="review-div">
+      <Newsletter />
+      <div className="review">
         <Swiper
           ref={swiperRef} // Attach Swiper instance to reference
           effect={"cards"}
@@ -43,7 +45,7 @@ export default function Reviews() {
             </SwiperSlide>
           ))}
         </Swiper>
-  
+
         {/* Buttons for manual navigation */}
         <div className="button-container">
           <button
@@ -59,6 +61,7 @@ export default function Reviews() {
             <FaChevronRight />
           </button>
         </div>
-      </article>
-    );
+      </div>
+    </div>
+  );
 }

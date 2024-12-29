@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+#root{
+  --rem: 14px
+}
 
 
 .navbar .container {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 1% 15% 0.2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +17,6 @@
 
 .navbar {
   position: relative;
-  padding: 25px 0px;
   background-color: #CAF0F8;
 
 }
@@ -24,15 +26,15 @@
   flex-direction: row;
   gap: 10px;
   font-family: monospace;
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: 600;
   align-items: flex-end;
 
 }
 
 .navbar img {
-    height: 60px;
-    border-radius: 10%;
+    height: 3.5rem;
+    border-radius: 6%;
 }
 
 .menu-icon {
@@ -53,14 +55,13 @@
 }
 
 .nav-elements ul a {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 500;
-  color: #2f234f;
+  color: black;
   text-decoration: none;
 }
 
 .nav-elements ul a.active {
-  color: #574c4c;
   font-weight: 600;
   position: relative;
 }
